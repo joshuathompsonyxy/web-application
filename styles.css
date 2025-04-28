@@ -1,39 +1,39 @@
 body {
-    font-family: sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: sans-serif; /*set the font for the entire page */
+    background-color: #f0f0f0; /*light gray background*/
+    margin: 0; /*remove default margin*/
+    padding: 0; /*remove default padding*/
+    display: flex; /* use flexbox layout */
+    flex-direction: column; /* arrage children vertically */
+    align-items: center; /* center everything horizontally*/
     justify-content: flex-start;
-    min-height: 100vh;
+    min-height: 100vh; /*make sure the body is the full height of the screen*/
 }
-
+/*style the heading*/
 h1 {
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
+    color: #333; /* dark gray text*/
+    text-align: center; /*center text*/
+    margin-top: 20px; /*add space at the top*/
 }
-
+/*style the form container*/
 form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
+    background-color: #fff; /*white background for form*/
+    padding: 20px; /*space inside the form*/
+    border-radius: 8px; /*rounded corners*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*soft shadow around the form*/
+    width: 300px; /*set the form width*/
+    text-align: center; /*center the form content*/
 }
-
+/*style the labels above input fields*/
 label {
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
+    display: block; /*make the label take the full width*/
+    margin-bottom: 5px; /*small space under the label*/
+    color: #555; /*medium gray text*/
 }
-
-input[type="text"] {
-    width: 100%;
-    padding: 8px;
+/*style the text field*/
+input[type="text"] { 
+    width: 100%; /*make the input take full width*/
+    padding: 8px; 
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -43,28 +43,28 @@ input[type="text"] {
 button[type="submit"] {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 10px 20px; /*space inside the button*/
+    border: none; /*remove border*/
+    border-radius: 4px; /*rounded corners*/
+    cursor: pointer; /*change cursor to pointer */
     width: 100%;
 }
 
-button[type="submit"]:hover {
+button[type="submit"]:hover { /* change submit buttton color when hovering */
     background-color: #45a049;
 }
-
+/*style paragraphs */
 p {
     text-align: center;
     color: #666;
     margin-bottom: 20px;
 }
-
+/*style links*/
 a {
     color: #0078d7;
-    text-decoration: none;
+    text-decoration: none; /*removes underline by default*/
 }
 
-a:hover {
+a:hover { /*underline links when hovered*/
     text-decoration: underline;
 }
