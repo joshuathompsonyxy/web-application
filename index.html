@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!--Set Character ending to UTF-8-->
     <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Form</title> <!--Title of page-->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file-->
     <style>
         #notFoundSection {
-            display: none; /* Initially hide the "Not Found" section */
-            border: 1px solid #ccc;
-            padding: 20px;
-            margin-top: 20px;
+            display: none; /* Initially hide the "Not Found" section */ 
+            border: 1px solid #ccc; /* light grey border */
+            padding: 20px; /* space inside the border */
+            margin-top: 20px; /* space above the section */
             background-color: #f9f9f9;
         }
         #notFoundSection h1 {
-            color: red;
+            color: red; /* make the 404 not found title red*/
         }
     </style>
 </head>
 <body>
-    <div id="formContainer">
-        <h1>Welcome To My Form</h1>
-        <form id="myForm">
-            <label for ="username">Username:</label>
+    <div id="formContainer"> <!-- Container holds the form-->
+        <h1>Welcome To My Form</h1> <!--Main Heading-->
+        <form id="myForm"> 
+            <label for ="username">Username:</label> <!--Label for username-->
+            <br> <!-- Line break to move the input to a new line -->
+            <input type="text" id ="username" name ="username"> <!-- Textbox for entering the username-->
             <br>
-            <input type="text" id ="username" name ="username">
             <br>
-            <br>
-            <input type = "submit" value ="submit">
+            <input type = "submit" value ="submit"> <!--Submit button-->
         </form>
     </div>
 
-    <div id="notFoundSection">
-        <h1>404 Not Found</h1>
+    <div id="notFoundSection"> <!-- Hidden section-->
+        <h1>404 Not Found</h1> <!--Error title-->
         <p>Sorry, the page you are looking for does not exist (simulated).</p>
         <a href ="/">Go back to the homepage</a>
     </div>
 
-    <script src="application.js"></script>
+    <script src="application.js"></script> <!-- Link to an external file-->
 </body>
 </html>
